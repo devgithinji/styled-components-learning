@@ -1,4 +1,5 @@
 import './App.css';
+import Title from "./components/Title";
 
 function App() {
     return (
@@ -8,6 +9,9 @@ function App() {
                 inline styles
             </h2>
             <h2 className="global">global css</h2>
+            <h2 className="first">first</h2>
+            <h2 className="second">second</h2>
+            <Title/>
         </div>
     );
 }
