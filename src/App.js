@@ -1,17 +1,31 @@
 import './App.css';
-import Title from "./components/Title";
+import StyledHeader from "./components/StyledHeader";
+import {DangerButton, SuccessButton} from "./components/PropsButton";
+import {createGlobalStyle} from "styled-components";
+import AlternativeHeader from "./components/AlternativeHeader";
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+`
 
 function App() {
     return (
         <div>
-            <h1>styled components</h1>
-            <h2 style={{color: "red", textTransform: "uppercase"}}>
-                inline styles
-            </h2>
-            <h2 className="global">global css</h2>
-            <h2 className="first">first</h2>
-            <h2 className="second">second</h2>
-            <Title/>
+            <GlobalStyle/>
+            <StyledHeader title="hello from app js"/>
+            <br/>
+            <AlternativeHeader title="hello from alternative header"/>
+            <DangerButton big>danger button</DangerButton>
+            <SuccessButton>success button</SuccessButton>
         </div>
     );
 }

@@ -1,10 +1,8 @@
 :root {
-    --primaryColor: #f15025;
+    --primaryColor: green;
 }
 
-body {
-    margin: 2rem;
-}
+
 
 .global {
     color: green;
