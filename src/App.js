@@ -7,6 +7,7 @@ function App() {
             <h2 style={{color: "red", textTransform: "uppercase"}}>
                 inline styles
             </h2>
+            <h2 className="global">global css</h2>
         </div>
     );
 }
