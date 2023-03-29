@@ -1,13 +1,12 @@
 import './App.css';
-import {AwesomeInput, BasicInput} from "./components/Inputs";
+import {GreenBox, RedBox} from "./components/Boxes";
 
 
 function App() {
     return (
         <div>
-            <BasicInput/>
-            <AwesomeInput/>
-            <AwesomeInput type="email" placeholder="Enter email"/>
+            <RedBox color="red"/>
+            <GreenBox color="green"/>
         </div>
     );
 }
