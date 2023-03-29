@@ -1,8 +1,8 @@
 import './App.css';
-import StyledHeader from "./components/StyledHeader";
-import {DangerButton, SuccessButton} from "./components/PropsButton";
+import StyledHeader from "./components/examples/StyledHeader";
+import {DangerButton, SuccessButton} from "./components/examples/PropsButton";
 import {createGlobalStyle} from "styled-components";
-import AlternativeHeader from "./components/AlternativeHeader";
+import AlternativeHeader from "./components/examples/AlternativeHeader";
 
 const GlobalStyle = createGlobalStyle`
   * {
